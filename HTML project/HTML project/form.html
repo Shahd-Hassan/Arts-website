@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Form</title>
+</head>
+<body style="background-color:Silver;">
+<h1><font color="black"> Welcome Again! Nice To See You Here.</font></h1>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2><font color="DarkBlue">Please Enter Your Answers:</h2>
+
+<h3><form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  First Name: <input type="text" name="fname"><br>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+ <br> Last Name: <input type="text" name="lname"><br>
+<form text="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+ <br> Enter your hobby: <input type="text" name="hobby"><br>
+<br>Please Select Your Sport:
+<br><select id="list"style="padding: 10px;" onchange="getselectvalue();">
+<option value="kb">Kickboxing</option>
+<option value="b">Boxing</option>
+<option value="k">Karate</option>
+<option value="t">Taekwondo</option>
+</select></h3>
+<script>
+function getselectvalue()
+{
+  var selectedValue = document.getElementById("list").value;
+            alert(selectedValue);
+        }
+        getSelectValue();
+</script><br>
+<br><input type="submit" value="Submit">
+</form>
+<center><h2><font color="black">Hope You Enjoyed Your Journey Throughout the Way!</font></h2>
+<center><img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702047913.jpg" width="600" height="400">
+<br><center><a href="home page.html">return to homepage.</a>
+</body>
+</html>
+
+
